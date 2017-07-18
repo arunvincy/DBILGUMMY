@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Simple Reporter Suite]">
+  <parameter name="atu-properties" value="atu.properties"/>
+  <listeners>
+    <listener class-name="atu.testng.reports.listeners.ATUReportsListener"/>
+    <listener class-name="atu.testng.reports.listeners.ConfigurationListener"/>
+    <listener class-name="atu.testng.reports.listeners.MethodListener"/>
+  </listeners>
+  <test name="Simple Reporter test(failed)">
+    <classes>
+      <class name="com.AmazonTests">
+        <methods>
+          <include name="Page91"/>
+          <include name="Page90"/>
+          <include name="Page89"/>
+        </methods>
+      </class> <!-- com.AmazonTests -->
+    </classes>
+  </test> <!-- Simple Reporter test(failed) -->
+</suite> <!-- Failed suite [Simple Reporter Suite] -->

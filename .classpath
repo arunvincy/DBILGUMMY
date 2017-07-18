@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/ATUReporter_Selenium_testNG_5.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/ATUTestRecorder_2.1.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/commons-lang3-3.5.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/extentreports-3.0.6.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/fop-2.2.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/itextpdf-5.5.11.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/javax.mail-1.5.1.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/javax.mail-api-1.5.5.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/jcommon-1.0.24.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/jfreechart-1.0.19.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/pdfngreport-2.1.3.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/poi-3.16.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/poi-ooxml-3.16.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/poi-ooxml-schemas-3.16.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/poi-scratchpad-3.16.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/selenium-server-standalone-2.53.0 (1).jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/testng-6.8.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="E:/test/ATREPORT/ext-lib/xmlgraphics-commons-2.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

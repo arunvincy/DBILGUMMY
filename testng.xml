@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Simple Reporter Suite">
+
+<parameter name="atu-properties" value="atu.properties" />
+
+<listeners>
+    <listener class-name="atu.testng.reports.listeners.ATUReportsListener" />
+    <listener class-name="atu.testng.reports.listeners.ConfigurationListener" />
+    <listener class-name="atu.testng.reports.listeners.MethodListener" />
+    
+    
+  </listeners>
+
+<!--    <suite-files> -->
+<!--          <suite-file path="testng-1.xml"></suite-file>  -->
+<!--         <suite-file path="testng-2.xml"></suite-file> -->
+<!--     </suite-files> -->
+    
+  <test name="Simple Reporter test">
+    <classes>
+      <class name="com.AmazonTests" />
+      
+    </classes>
+  </test>
+</suite>
+

@@ -1,0 +1,660 @@
+<html>
+<head>
+<title>TestNG:  Simple Reporter test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Simple Reporter test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>89/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jul 19 02:44:54 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (149 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.AmazonTests.Page89()'><b>Page89</b><br>Test class: com.AmazonTests</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.AmazonTests.Page89(AmazonTests.java:153)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1547425104", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1547425104'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:288)
+	at org.testng.Assert.assertEquals(Assert.java:298)
+	at com.AmazonTests.Page89(AmazonTests.java:153)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+</pre></div></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page90()'><b>Page90</b><br>Test class: com.AmazonTests</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.AmazonTests.Page90(AmazonTests.java:154)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1615780336", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1615780336'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:288)
+	at org.testng.Assert.assertEquals(Assert.java:298)
+	at com.AmazonTests.Page90(AmazonTests.java:154)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+</pre></div></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page91()'><b>Page91</b><br>Test class: com.AmazonTests</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.AmazonTests.Page91(AmazonTests.java:155)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1783593083", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1783593083'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:288)
+	at org.testng.Assert.assertEquals(Assert.java:298)
+	at com.AmazonTests.Page91(AmazonTests.java:155)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+</pre></div></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.AmazonTests.Page10Test()'><b>Page10Test</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page11()'><b>Page11</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page11Test()'><b>Page11Test</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page12()'><b>Page12</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page13()'><b>Page13</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page14()'><b>Page14</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page15()'><b>Page15</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page16()'><b>Page16</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page17()'><b>Page17</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page18()'><b>Page18</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page19()'><b>Page19</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page1Test()'><b>Page1Test</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page20()'><b>Page20</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page21()'><b>Page21</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page22()'><b>Page22</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page23()'><b>Page23</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page24()'><b>Page24</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page25()'><b>Page25</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page26()'><b>Page26</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page27()'><b>Page27</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page28()'><b>Page28</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page29()'><b>Page29</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page2Test()'><b>Page2Test</b><br>Test class: com.AmazonTests<br/>
+<a href="#Output-1483022288" onClick='toggleBox("Output-1483022288", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1483022288" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1483022288">
+M3 WAS CALLED<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page30()'><b>Page30</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page31()'><b>Page31</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page32()'><b>Page32</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page33()'><b>Page33</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page34()'><b>Page34</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page35()'><b>Page35</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page36()'><b>Page36</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page37()'><b>Page37</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page38()'><b>Page38</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page39()'><b>Page39</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page3Test()'><b>Page3Test</b><br>Test class: com.AmazonTests<br/>
+<a href="#Output-551734240" onClick='toggleBox("Output-551734240", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-551734240" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-551734240">
+Page3Test WAS CALLED<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page40()'><b>Page40</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page41()'><b>Page41</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page42()'><b>Page42</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page43()'><b>Page43</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page44()'><b>Page44</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page45()'><b>Page45</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page46()'><b>Page46</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page47()'><b>Page47</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page48()'><b>Page48</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page49()'><b>Page49</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page4Test()'><b>Page4Test</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page50()'><b>Page50</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page51()'><b>Page51</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page52()'><b>Page52</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page53()'><b>Page53</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page54()'><b>Page54</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page55()'><b>Page55</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page56()'><b>Page56</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page57()'><b>Page57</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page58()'><b>Page58</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page59()'><b>Page59</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page5Test()'><b>Page5Test</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page60()'><b>Page60</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page61()'><b>Page61</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page62()'><b>Page62</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page63()'><b>Page63</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page64()'><b>Page64</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page65()'><b>Page65</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page66()'><b>Page66</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page67()'><b>Page67</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page68()'><b>Page68</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page69()'><b>Page69</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page6Test()'><b>Page6Test</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page70()'><b>Page70</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page71()'><b>Page71</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page72()'><b>Page72</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page73()'><b>Page73</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page74()'><b>Page74</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page75()'><b>Page75</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page76()'><b>Page76</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page77()'><b>Page77</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page78()'><b>Page78</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page79()'><b>Page79</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page7Test()'><b>Page7Test</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page80()'><b>Page80</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page81()'><b>Page81</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page82()'><b>Page82</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page83()'><b>Page83</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page84()'><b>Page84</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page85()'><b>Page85</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page86()'><b>Page86</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page87()'><b>Page87</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page88()'><b>Page88</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page8Test()'><b>Page8Test</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+<tr>
+<td title='com.AmazonTests.Page9Test()'><b>Page9Test</b><br>Test class: com.AmazonTests</td>
+<td></td>
+<td>0</td>
+<td>com.AmazonTests@25618e91</td></tr>
+</table><p>
+</body>
+</html>
